@@ -16,7 +16,7 @@
       <h2>Grocery List</h2>
     </div>
     <form>
-      <div class="form-group form-check">
+      <!-- <div class="form-group form-check">
         <input type="checkbox" class="form-check-input" id="milk">
         <label class="form-check-label" for="milk">Milk</label>
       </div>
@@ -83,8 +83,39 @@
       <div class="form-group form-check">
         <input type="checkbox" class="form-check-input" id="Stella">
         <label class="form-check-label" for="Stella">12pk Stella beer</label>
-      </div>
-    </form>  
+      </div> -->
+    </form>
+
+    <form id="item-form">
+      <label for="item-input">Add an Item!</label>
+      <input type="text" id="item-input"><br>
+      <input id="add-item" type="submit" value="Add an Item!">
+    </form>
+    <div id="buttons-view"></div>
+
   </div>
+  <script type="text/javascript">
+    const items = [];
+
+    function renderButtons() {
+      $("#buttons-view").empty();
+      for (let i = 0; i < items.length; i++) {
+        const a = $("<button>");
+          a.addClass("item");
+          a.attr("data-name", items[i]);
+          a.text(items[i]);
+          $("#buttons-view").append(a);
+      }
+    }
+
+    $("#add-item").on("click", function(event) {
+        event.preventDefault();
+        let item = $("#item-input").val().trim();
+        items.push(item);
+        renderButtons();
+      });
+
+    renderButtons();      
+  </script>
 </body>
 </html>

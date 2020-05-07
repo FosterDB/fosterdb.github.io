@@ -1,82 +1,322 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <title>FosterDB</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet" />
+
+  <title>David Foster's Portfolio</title>
+
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/fontawesome.css" />
+  <link rel="stylesheet" href="assets/css/templatemo-style.css" />
+  <link rel="stylesheet" href="assets/css/owl.css" />
+  <link rel="stylesheet" href="assets/css/lightbox.css" />
+  
+  <style>
+    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+      color: white;
+      opacity: 1; /* Firefox */
+    }
+
+    :-ms-input-placeholder { /* Internet Explorer 10-11 */
+      color: white;
+    }
+
+    ::-ms-input-placeholder { /* Microsoft Edge */
+      color: white;
+    }
+  </style>
+
 </head>
-<body style="background-color: black;">
-    <div class="container">
-        <header style="color: white; text-align: center">
-            <nav class="navbar navbar-expand-lg navbar-dark">
-                <a class="navbar-brand" href="index.html">FosterDB</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-              
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav mr-auto">
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More</a>
-                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="favorite-leagues.html">Favorite Leagues</a>
-                        <a class="dropdown-item" href="favorite-teams.html">Favorite Teams</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="fun.html">Have some fun!</a>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-              </nav>
-            <p>- - - -</p>
-        </header>
-        <div class="row">
-            <div class="col-sm-12 col-md-12 col-lg-12">
-                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
-                    </ol>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="https://www.dfb.de/fileadmin/_processed_/201905/csm_199289-DFB-Pokal_25_f8374c9862.jpg" class="d-block w-100 shadow rounded mb-5" alt="Neuer">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="https://e1.365dm.com/17/01/2048x1152/skysports-spidercam-manchester-united-liverpool_3880862.jpg" class="d-block w-100 shadow rounded mb-5" alt="PremLeague">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="https://e2.365dm.com/14/07/2048x1152/donovan-landon-galaxy_3179869.jpg" class="d-block w-100 shadow rounded mb-5" alt="Donovan">    
-                        </div>
-                        <div class="carousel-item">
-                            <img src="https://pbs.twimg.com/media/Dom7_vLV4AAZClr.jpg:large" class="d-block w-100 shadow rounded mb-5" alt="Wilson">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="http://cdn.chatsports.com/thumbnails/353-45861-original.jpeg" class="d-block w-100 shadow rounded mb-5" alt="Astros">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="http://www.trbimg.com/img-5837980b/turbine/la-sp-redskins-cowboys-20161124" class="d-block w-100 shadow rounded mb-5" alt="Zeke">
-                        </div>
-                    </div>
-                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                </div>
-            </div>
+
+<body>
+  <div id="page-wraper">
+
+    <div class="responsive-nav">
+      <i class="fa fa-bars" id="menu-toggle"></i>
+      <div id="menu" class="menu">
+        <i class="fa fa-times" id="menu-close"></i>
+        <div class="container">
+          <div class="image">
+            <a href="#"><img src="assets/images/at_Culture.png" alt=""/></a>
+          </div>
+          <div class="author-content">
+            <h4>David Foster</h4>
+            <span>Full Stack Web Developer</span>
+          </div>
+          <nav class="main-nav" role="navigation">
+            <ul class="main-menu">
+              <li><a href="#section1">About Me</a></li>
+              <li><a href="#section2">My Work</a></li>
+              <li><a href="#section3">Contact Me</a></li>
+            </ul>
+          </nav>
+          <div class="social-network">
+            <ul class="social-icons">
+              <li>
+                <a href="https://www.linkedin.com/in/fosterdb/"><i class="fa fa-linkedin"></i></a>
+              </li>
+              <li>
+                <a href="https://github.com/FosterDB"><i class="fa fa-github"></i></a>
+              </li>
+              <li>
+                <a href="assets/images/Resume.pdf"><i class="fa fa-file"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="copyright-text">
+            <p>Copyright 2020 FosterDB</p>
+          </div>
         </div>
+      </div>
     </div>
+
+    <section class="section about-me" data-section="section1">
+      <div class="container">
+        <div class="section-heading">
+          <h2>David Foster</h2>
+          <div class="line-dec"></div>
+          <span>I am striving to be a Full Stack Web Developer, currently enrolled in a "Coding Bootcamp" through the
+            University of Arizona. This portfolio includes projects showcasing my coding and web development
+            abilities.</span>
+        </div>
+        <div class="left-image-post">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="left-image">
+                <img src="assets/images/Wolfpack.jpeg" alt=""/>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="right-text">
+                <h4>About Me</h4>
+                <p>My family is everything to me. My wife, Erin, and I are from Arizona, but moved to San Diego after
+                  college to enjoy the beach. We moved back to Arizona to be closer to our families after having a son
+                  of our own. His name is Wade (I call him Zeus!).
+                  <br><br>
+                  My hobbies include sports, video games, and sports video games. I am a lifelong fan of the Dallas
+                  Cowboys. Also, having spent a while in Southern California, I have adopted the Anaheim Ducks as my
+                  favorite hockey team.
+                  <br><br>
+                  Click the "Connect" button to if you would like to get in touch with me.</p>
+                <div class="white-button">
+                  <a href="#connect">Connect</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="right-image-post">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="left-text">
+                <h4>About Me</h4>
+                <p>Text.
+                  <br><br>
+                More text.
+                  <br><br>
+                Even more text.</p>
+                <div class="white-button">
+                  <a href="#">button</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="right-image">
+                <img src="assets/images/right-image.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </section>
+
+    <section class="section my-work" data-section="section2">
+      <div class="container">
+        <div class="section-heading">
+          <h2>My Work</h2>
+          <div class="line-dec"></div>
+          <span>A select group of completed projects. More available upon request.</span>
+        </div>
+        <div class="row">
+          <div class="isotope-wrapper">
+            <form class="isotope-toolbar">
+              <label><input type="radio" data-type="*" checked="" name="isotope-filter"/>
+                <span>All</span></label>
+              <label><input type="radio" data-type="projects" name="isotope-filter"/>
+                <span>Projects</span></label>
+              <label><input type="radio" data-type="homework" name="isotope-filter"/>
+                <span>Homework</span></label>
+              <label><input type="radio" data-type="fun" name="isotope-filter"/>
+                <span>Fun</span></label>
+            </form>
+            <div class="isotope-box">
+              <div class="isotope-item" data-type="homework">
+                <figure class="snip1321">
+                  <img src="assets/images/day_planner.png" alt="" style="height: 250px; width: 300px;" />
+                  <figcaption>
+                    <a href="https://fosterdb.github.io/day_planner/">
+                      <i class="fa fa-search"></i>
+                    </a>
+                    <h4>Day Planner</h4>
+                    <span>A simple calendar application to save events for each hour of the day.</span>
+                  </figcaption>
+                </figure>
+              </div>
+
+              <div class="isotope-item" data-type="homework">
+                <figure class="snip1321">
+                  <img src="assets/images/password_generator.png" alt="" style="height: 250px; width: 300px;" />
+                  <figcaption>
+                    <a href="https://fosterdb.github.io/password_generator/">
+                      <i class="fa fa-search"></i></a>
+                    <h4>Password Generator</h4>
+                    <span>A simple application to generate a random password based on desired criteria.</span>
+                  </figcaption>
+                </figure>
+              </div>
+
+              <div class="isotope-item" data-type="homework">
+                <figure class="snip1321">
+                  <img src="assets/images/budget_tracker.png" alt="" style="height: 250px; width: 300px;" />
+                  <figcaption>
+                    <a href="https://trackthebudget.herokuapp.com/">
+                      <i class="fa fa-search"></i></a>
+                    <h4>Budget Tracker</h4>
+                    <span>A progressive web application to track a budget offline and online.</span>
+                  </figcaption>
+                </figure>
+              </div>
+
+              <div class="isotope-item" data-type="projects">
+                <figure class="snip1321">
+                  <img src="assets/images/dad_facts.png" alt="" style="height: 250px; width: 300px;" />
+                  <figcaption>
+                    <a href="https://ahaymond-dev.github.io/The_Real_Project_1/"><i class="fa fa-search"></i></a>
+                    <h4>Dad Facts</h4>
+                    <span>An location-based application providing entertainment and knowledge.</span>
+                  </figcaption>
+                </figure>
+              </div>
+
+              <div class="isotope-item" data-type="fun">
+                <figure class="snip1321">
+                  <img src="assets/images/quiz.png" alt="" style="height: 250px; width: 300px;" />
+                  <figcaption>
+                    <a href="https://fosterdb.github.io/coding_quiz/"><i class="fa fa-search"></i></a>
+                    <h4>Quiz</h4>
+                    <span>A quick quiz based on the coding bootcamp that I attended.</span>
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="connect" class="section contact-me" data-section="section3">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Contact Me</h2>
+          <div class="line-dec"></div>
+          <span>Reach out to me using the form below!</span>
+        </div>
+        <div class="row">
+          <div class="right-content">
+            <div class="container">
+              <form id="contact" action="" method="post">
+                <div class="row">
+                  <div class="col-md-6">
+                    <fieldset>
+                      <input name="name" type="text" class="form-control" id="name" placeholder="Your name..." required=""/>
+                    </fieldset>
+                  </div>
+                  <div class="col-md-6">
+                    <fieldset>
+                      <input name="email" type="text" class="form-control" id="email" placeholder="Your email..." required="" />
+                    </fieldset>
+                  </div>
+                  <div class="col-md-12">
+                    <fieldset>
+                      <input name="subject" type="text" class="form-control" id="subject" placeholder="Subject..." required="" />
+                    </fieldset>
+                  </div>
+                  <div class="col-md-12">
+                    <fieldset>
+                      <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your message..." required=""></textarea>
+                    </fieldset>
+                  </div>
+                  <div class="col-md-12">
+                    <fieldset>
+                      <div class="white-button">
+                        <a href="mailto:foster_db@yahoo.com" id="form-submit">Send Message</a>
+                      </div>
+                    </fieldset>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <script src="assets/js/isotope.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/lightbox.js"></script>
+  <script src="assets/js/custom.js"></script>
+  
+  <script>
+    $(".main-menu li:first").addClass("active");
+
+    var showSection = function showSection(section, isAnimate) {
+      var direction = section.replace(/#/, ""),
+        reqSection = $(".section").filter('[data-section="' + direction + '"]'),
+        reqSectionPos = reqSection.offset().top - 0;
+
+      if (isAnimate) {
+        $("body, html").animate({scrollTop: reqSectionPos}, 800);
+      } else {
+        $("body, html").scrollTop(reqSectionPos);
+      }
+    };
+
+    var checkSection = function checkSection() {
+      $(".section").each(function () {
+        var $this = $(this),
+          topEdge = $this.offset().top - 80,
+          bottomEdge = topEdge + $this.height(),
+          wScroll = $(window).scrollTop();
+        if (topEdge < wScroll && bottomEdge > wScroll) {
+          var currentId = $this.data("section"),
+            reqLink = $("a").filter("[href*=\\#" + currentId + "]");
+          reqLink
+            .closest("li")
+            .addClass("active")
+            .siblings()
+            .removeClass("active");
+        }
+      });
+    };
+
+    $(".main-menu").on("click", "a", function (e) {
+      e.preventDefault();
+      showSection($(this).attr("href"), true);
+    });
+
+    $(window).scroll(function () {
+      checkSection();
+    });
+  </script>
 </body>
 </html>
